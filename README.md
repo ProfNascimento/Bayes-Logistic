@@ -1,3 +1,3 @@
-# Bayes-Logistic
+# Bayesian Logistic Regression
 
 This script is related...
