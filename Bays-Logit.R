@@ -2,6 +2,8 @@
 heart <- read.csv("https://raw.githubusercontent.com/ProfNascimento/Bayes-Logistic/main/heart.csv")
 str(heart)
 
+summary(as.factor(heart$HeartDisease))
+
 DB=fastDummies::dummy_cols(heart,
       select_columns = c("Sex","ChestPainType","RestingECG","ExerciseAngina","ST_Slope"),
                            remove_selected_columns=TRUE)
